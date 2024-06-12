@@ -23,12 +23,12 @@ a:focus {
 .tm-left-right-container { width: 100%; }
 
 .tm-blue-bg {
-	background-color: #8c1515;
-	color: white;
+	background-color: #2D68C4;
+	color: #F2A900;
 }
 
-.tm-blue-text {	color: #8c1515; }
-.tm-blue-bg a {	color: white; }
+.tm-blue-text {	color: #2D68C4; }
+.tm-blue-bg a {	color: #F2A900; }
 
 .tm-site-name {
 	font-size: 3rem;
