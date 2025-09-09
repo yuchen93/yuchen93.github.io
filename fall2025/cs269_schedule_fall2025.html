@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+    <style>
+        .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+  
+      img {
+        max-width: 100%;
+        max-height:100%;
+      }
+  
+      .text {
+        font-size: 60px;
+        padding-left: 20px;
+      }
+      </style>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>CS269</title>
+
+  </head>
+  <body>
+
+      <font size="-1">
+        <div class="container">
+          <div class="row">
+        
+
+                      <div class="tm-content-div">
+                        <header>
+                          <h2 class="tm-blue-text tm-section-title">CS269: Interactive Robot Learning (fall 2025)</h2>
+                      </header>
+                      <br>
+        <h4 id="topics">Schedule</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 10%">Date</th>
+                    <th style="width: 16%">Topic</th>
+                    <th style="width: 40%">Readings</th>
+                    <!--th style="width: 15%">Presenter</th-->
+                    <th style="width: 25%">Deadline</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr class="active">
+                    <td><b>Week 1</b><br>
+                        Mon, Sep 29
+                    </td>
+                    <td><i>Course Logistics</i></td>
+                    <td>
+                        <ul>
+                            <li><b class="bold">Please checkout our <a href="cs269_policies_fall2025.html">Course
+                                Policies.</a></b></li>
+                            <li> Slides </li>
+                        </ul>
+                    </td>
+                    <td>
+                        Sign up for 2 presenter slots by Wednesday Oct 1st.
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Week 1</b><br>
+                        Wed, Oct 1
+                    </td>
+                    <td>Robot Learning Foundations</td>
+                    <td>
+                        <ul>
+                            <li><a href='https://arxiv.org/pdf/1604.00289'>Building Machines That Learn and Think Like People</a></li>
+                            <li><a href='https://arxiv.org/pdf/1907.03146'>A Review of Robot Learning for Manipulation: Challenges, Representations, and Algorithms</a></li>
+                            <li><a href='https://www.frontiersin.org/journals/neuroanatomy/articles/10.3389/fnana.2021.693346/full'>Five Breakthroughs: A First Approximation of Brain Evolution From Early Bilaterians to Humans</a></li>
+                        </ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr>
+                    <td><b>Week 2</b><br>
+                        Mon, Oct 6
+                    </td>
+                    <td>Reinforcement Learning</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/1707.06347">Proximal Policy Optimization Algorithms</a></li> 
+                            <li><a href="https://arxiv.org/abs/1801.01290">Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor</a></li> 
+                            <li><a href="https://arxiv.org/abs/2311.02198">Imitation Bootstrapped Reinforcement Learning</a></li> 
+                        </ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 2</b><br>
+                        Wed, Oct 8
+                    </td>
+                    <td>Learning from Human Feedback</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/2206.11251">Behavior Transformers: Cloning k modes with one stone</a></li> 
+                            <li><a href="https://arxiv.org/abs/2209.05451">Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation</a></li> 
+                            <li><a href="https://arxiv.org/abs/2106.01345">Decision Transformer: Reinforcement Learning via Sequence Modeling</a></li> 
+                        </ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 3</b><br>
+                        Mon, Oct 13
+                    </td>
+                    <td>Behavior Cloning</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/2205.09991">Planning with Diffusion for Flexible Behavior Synthesis</a></li> 
+                            <li><a href="https://arxiv.org/abs/2303.04137">Diffusion Policy: Visuomotor Policy Learning via Action Diffusion</a></li> 
+                            <li><a href="https://arxiv.org/abs/2305.16317">Parallel Sampling of Diffusion Models</a></li> 
+                        </ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr>
+                    <td><b>Week 3</b><br>
+                        Wed, Oct 15
+                    </td>
+                    <td>Inverse Reinforcement Learning</td>
+                    <td>
+                        <ul>
+                            <li><a href="http://ai.stanford.edu/~ang/papers/icml04-apprentice.pdf">Apprenticeship Learning via Inverse Reinforcement Learning</a></li> 
+                            <li><a href="https://arxiv.org/abs/1606.03476">Generative Adversarial Imitation Learning</a></li> 
+                            <li><a href="https://arxiv.org/abs/2010.11723">Learning from Suboptimal Demonstration via Self-Supervised Reward Regression</a></li> 
+                        </ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr>
+                    <td><b>Week 4</b><br>
+                        Mon, Oct 20
+                    </td>
+                    <td>Multi-Modal Interaction - Gestures</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/2109.08273">ThriftyDAgger: Budget-Aware Novelty and Risk Gating for Interactive Imitation Learning</a></li> 
+                            <li><a href="https://arxiv.org/abs/1703.06907">Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World</a></li> 
+                            <li><a href="https://arxiv.org/abs/1709.07857">Using Simulation and Domain Adaptation to Improve Efficiency of Deep Robotic Grasping</a></li> 
+                        </ul>
+                    </td>
+                    <td>
+                        Paper response due the day before class at 9PM. <br>
+                        <b> Project Proposal due Oct 18 at 11:59PM</b>
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 4</b><br>
+                        Wed, Oct 22
+                    </td>
+                    <td>Multi-Modal Interaction - Gaze</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/2307.15818">RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control</a></li> 
+                            <li><a href="https://arxiv.org/abs/2406.18915">Manipulate-Anything: Automating Real-World Robots using Vision-Language Models</a></li>
+                            <li><a href="https://arxiv.org/abs/2406.09246">OpenVLA: An Open-Source Vision-Language-Action Model</a></li>
+                        </ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 5</b><br>
+                        Mon, Oct 27
+                    </td>
+                    <td>Shared Autonomy &amp; Mixed-Initiative Control</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/1707.06347">Proximal Policy Optimization Algorithms</a></li> 
+                            <li><a href="https://arxiv.org/abs/1801.01290">Soft Actor-Critic</a></li> 
+                            <li><a href="https://arxiv.org/abs/2311.02198">Imitation Bootstrapped Reinforcement Learning</a></li> 
+                        </ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 5</b><br>
+                        Wed, Oct 29
+                    </td>
+                    <td>Collaborative Decision-Making in Human-Robot Teams</td>
+                    <td>
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/2204.01691">SayCan: Grounding Language in Robotic Affordances</a></li>
+                            <li><a href="https://arxiv.org/abs/2209.07753">Code as Policies: Language Model Programs for Embodied Control</a></li> 
+                            <li><a href="https://arxiv.org/abs/2307.01928">Robots That Ask For Help</a></li> 
+                        </ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr>
+                    <td><b>Week 6</b><br>
+                        Mon, Nov 3
+                    </td>
+                    <td>Machine Teaching of Human Motor Skills</td>
+                    <td>
+                        <ul></ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr>
+                    <td><b>Week 6</b><br>
+                        Wed, Nov 5
+                    </td>
+                    <td>[project elevator pitch presentations]</td>
+                    <td>
+                        <ul></ul>
+                    </td>
+                    <td>
+                        Paper response due the day before class at 9PM. <br>
+                        <b> Project Milestone Review due Nov 8 at 11:59PM</b>
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 7</b><br>
+                        Mon, Nov 10
+                    </td>
+                    <td>Human Factors: Teaching &amp; Trust</td>
+                    <td>
+                        <ul></ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 7</b><br>
+                        Wed, Nov 12
+                    </td>
+                    <td>Metrics for Trust and Safety in Human-Robot Interaction</td>
+                    <td>
+                        <ul></ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr>
+                    <td><b>Week 8</b><br>
+                        Mon, Nov 17
+                    </td>
+                    <td>Scaling Interactive Learning</td>
+                    <td>
+                        <ul></ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 8</b><br>
+                        Wed, Nov 19
+                    </td> 
+                    <td>Lifelong and Continual Robot Learning</td>
+                    <td>
+                        <ul></ul>
+                    </td>
+                    <td>Paper response due the day before class at 9PM.</td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 9</b> <br>
+                      Mon, Nov 24</td>
+                    <td><i>Lecture</i></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Week 9</b><br>
+                        Wed, Nov 26 
+                    </td>
+                    <td>[break]</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>Week 10</b><br />
+                        Mon, Dec 1
+                    </td>
+                    <td><b>Final project presentations</b></td>
+                    <td>
+                        <ul></ul>
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td><b>Week 10</b><br />
+                        Wed, Dec 3 
+                    </td>
+                    <td><b>Final project presentations</b></td>
+                    <td>
+                        <ul></ul>
+                    </td>
+                    <td>
+                        <b>Project report due Dec 5 at 11:59PM (firm). </b>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h5>Additional resources:</h5>
+        <p>Part of this course is based on:
+        <ul>
+            <li><a href="https://www.cs.utexas.edu/~yukez/cs391r_fall_2023/">CS 391R: Robot Learning (UT Austin)</a></li>
+            <li><a href="https://web.stanford.edu/class/cs237b/">CS 237B: Principles of Robot Autonomy II</a></li>
+            <li><a href="https://liralab.usc.edu/csci699/">CSCI 699: Robot Learning (USC) </a></li>
+        </ul>
+    </p>
+
+
+        <div class="hrline">
+            <hr />
+        </div>
+        <br>
+       
+    </font>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
