@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/magnific-popup.css">
@@ -26,9 +25,28 @@
           font-size: 60px;
           padding-left: 20px;
         }
+
+        /* Replaced the deprecated <font size="-1"> with a CSS class */
+        .content-wrapper {
+          font-size: 0.9em; 
+        }
+
+        .grading-metrics h5 {
+          margin-top: 30px;
+          margin-bottom: 15px;
+        }
+
+        .grading-metrics h6 {
+          font-weight: bold;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+
+        .grading-metrics p {
+          margin-bottom: 15px;
+        }
     </style>
 
-    <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
@@ -38,158 +56,168 @@
   </head>
   <body>
 
-    <font size="-1">
-      <div class="container">
-        <div class="row">
-          <div class="tm-content-div">
-            <header>
-              <h2 class="tm-blue-text tm-section-title">CS269: Rethinking Motion Representation in Robot Learning (Spring 2026)</h2>
-            </header>
-            <br>
+    <div class="container content-wrapper">
+      <div class="row w-100">
+        <div class="tm-content-div w-100">
+          <header>
+            <h2 class="tm-blue-text tm-section-title">CS269: Rethinking Motion Representation in Robot Learning (Spring 2026)</h2>
+          </header>
+          <br>
 
-            <h5 id="topics">Grading Policies</h5>
-            <br>
-            <div class="hrline"><hr /></div>
-            <br>
+          <h5 id="topics" style="font-weight: bold;">Grading Policies</h5>
+          <div class="hrline"><hr /></div>
+          <br>
 
-            <div class="grading-metrics">
-              <div class="row">
-                <div class="col-md-6">
-                  <h6>Overall Grading Breakdown</h6>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Component</th>
-                        <th>Weight</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Paper Presentation</td>
-                        <td>20%</td>
-                      </tr>
-                      <tr>
-                        <td>Paper Quizzes</td>
-                        <td>20%</td>
-                      </tr>
-                      <tr>
-                        <td>Final Project</td>
-                        <td>60%</td>
-                      </tr>
-                      <tr class="active">
-                        <td>Total</td>
-                        <td>100%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-                <div class="col-md-6">
-                  <h6>Final Project Components</h6>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Component</th>
-                        <th>Weight</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Proposal</td>
-                        <td>5%</td>
-                      </tr>
-                      <tr>
-                        <td>Elevator Pitch</td>
-                        <td>5%</td>
-                      </tr>
-                      <tr>
-                        <td>Presentation</td>
-                        <td>15%</td>
-                      </tr>
-                      <tr>
-                        <td>Final Report</td>
-                        <td>35%</td>
-                      </tr>
-                      <tr class="active">
-                        <td>Total</td>
-                        <td>60%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+          <div class="grading-metrics">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>Overall Grading Breakdown</h6>
+                <table class="table table-bordered">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Component</th>
+                      <th>Weight</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Paper Presentation</td>
+                      <td>20%</td>
+                    </tr>
+                    <tr>
+                      <td>Class Participation</td>
+                      <td>20%</td>
+                    </tr>
+                    <tr>
+                      <td>Final Project</td>
+                      <td>60%</td>
+                    </tr>
+                    <tr class="table-active font-weight-bold">
+                      <td>Total</td>
+                      <td>100%</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
-              <br>
-
-              <h6>Paper Presentation (15%) + Quiz Questions (5%)</h6>
-              Each student will present one paper (with a partner) and lead a discussion of its strengths and weaknesses.  
-              Sign-up will be available on Bruinlearn and must be completed by the start of Week 2. Students who do not sign up will be randomly assigned.  
-
-              <br><br>
-              Each paper presentation is allocated 30 minutes. The format is flexible (talk, live demo, creative format), but your goal is to clearly communicate the key ideas of the paper.  
-              Your team must also prepare **3 quiz questions** testing core ideas from the paper. These should be challenging and designed to assess genuine understanding. Quiz questions (with answers) are due **3 days before your presentation**, and should be emailed directly to the instructor.  
-
-              <br><br>
-
-              <h6>Paper Quizzes (20%)</h6>
-              Quizzes will be posted on Bruinlearn before each class and will remain open for 24 hours.  
-              Each quiz will contain 6 questions (2 per paper) and will be graded for correctness.  
-
-              <br><br>
-
-              <h6>Class Participation</h6>
-              Attendance is not mandatory but strongly encouraged, as in-class discussion is an important component of learning.  
-              If you need to reschedule your assigned presentation, please arrange a swap with another student and notify the instructor in advance.  
-
-              <br><br>
-
-              <h5>Final Project</h5>
-              The final project must include both a learning and a robotics component. Group work is encouraged (2–4 students).  
-              Projects may build on your existing research if relevant, but pre-existing work will be graded with higher expectations.  
-
-              <br>
-              Deliverables:
-              <br><br>
-
-              <b>Proposal (5%):</b> A 1-page document including problem definition, related work, a potential solution, and a timeline. Submit via Bruinlearn by 11:59 PM on the due date.  
-              <br>
-
-              <b>Elevator Pitch (5%):</b> A 2-minute oral overview of your project idea.  
-              <br>
-
-              <b>Presentation (15%):</b> A 15-minute in-class presentation summarizing your project outcomes.  
-              <br>
-
-              <b>Final Report (35%):</b> A 5–8 page report submitted via Bruinlearn by 11:59 PM on the deadline. **No late reports will be accepted.**  
-
-              <br><br>
-
-              <h5>Late Policy</h5>
-              Extensions may be granted for research-related travel or conference deadlines. Exams or assignments for other courses are not valid reasons for late submission.  
-              Without prior approval, late assignments will be penalized 20%.  
-              No final project reports will be accepted after the posted deadline.  
-
-              <br><br>
-
-              <h6>Letter Grades</h6>
-              Letter grades will use both plus and minus distinctions:  
-              <ul style="list-style-type:disc;">
-                <li>95% – 100%: A+ </li>
-                <li>93% – 94%: A </li>
-                <li>90% – 92%: A- </li>
-                <li>87% – 89%: B+ </li>
-                <li>84% – 86%: B </li>
-                <li>81% – 83%: B- </li>
-                <li>78% – 80%: C+ </li>
-                <li>75% – 77%: C </li>
-                <li>72% – 74%: C- </li>
-                <li>Below 72%: F </li>
-              </ul>
+              <div class="col-md-6">
+                <h6>Final Project Components</h6>
+                <table class="table table-bordered">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Component</th>
+                      <th>Weight</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Proposal</td>
+                      <td>10%</td>
+                    </tr>
+                    <tr>
+                      <td>Project Presentation</td>
+                      <td>20%</td>
+                    </tr>
+                    <tr>
+                      <td>Final Report</td>
+                      <td>30%</td>
+                    </tr>
+                    <tr class="table-active font-weight-bold">
+                      <td>Total</td>
+                      <td>60%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
+
+            <br>
+
+            <h6>Paper Presentation &amp; Discussion Questions (20%)</h6>
+            <p>Each student will present one paper (typically with a partner) and lead an in-depth class discussion. Sign-ups will be available on BruinLearn and must be completed by the start of Week 2. Students who do not sign up by the deadline will be randomly assigned to a paper.</p>
+            <p>Each class session (90–110 minutes) is dedicated to a single paper. The two lead presenters are responsible for breaking the material down into 10–15 minute interactive reading and discussion segments. Presenters must submit their slides and discussion questions by 11:59 PM the day before their assigned presentation. Prior to each reading segment, presenters should provide specific prompts or tasks to the class to actively facilitate discussion.</p>
+
+            <h6>Participation (20%)</h6>
+            <p>Consistent attendance is required and will be tracked. Each student is permitted one unexcused absence without penalty.</p>
+
+            <br>
+            <div class="hrline"><hr /></div>
+
+            <h5>Final Project Overview</h5>
+<p>The final project serves as the capstone of this course, challenging you to critically apply the concepts learned from reading papers to a concrete problem. Every project must successfully integrate a <strong>machine learning</strong> component with a <strong>robotics</strong> application, keeping the core debate of how we represent action (e.g., task-space vs. joint-space, continuous vs. discrete, hierarchical vs. end-to-end) at the forefront of your methodology.</p>
+
+<p>We welcome a variety of project scopes to accommodate different research interests. You may choose one of the following tracks:</p>
+<ul style="padding-left: 20px; margin-bottom: 15px;">
+    <li style="margin-bottom: 10px;"><strong>Empirical & Experimental:</strong> Design, implement, and evaluate a novel policy or action representation on a simulated or physical robot.</li>
+    <li style="margin-bottom: 10px;"><strong>Theoretical:</strong> Formulate new mathematical frameworks, analyze algorithmic bounds, or investigate the theoretical properties of specific motion representations in robot learning.</li>
+    <li style="margin-bottom: 10px;"><strong>Comprehensive Survey:</strong> Write a thorough, publication-quality review paper on a targeted sub-topic (e.g., latent action spaces in foundation models). A successful survey must go beyond mere summarization to propose a novel taxonomy, synthesize trends, and identify critical gaps in the current literature.</li>
+</ul>
+
+<p><strong>Collaboration & Teams</strong><br>
+Group work is highly encouraged. We recommend forming teams of 2–4 students. Collaborative projects naturally allow for a more ambitious scope, deeper technical execution, and richer discussions.</p>
+
+<p><strong>Building on Existing Research</strong><br>
+You are welcome to build upon your ongoing lab research, provided it strongly aligns with the course themes. However, please note that pre-existing work will be evaluated with proportionately higher expectations. If you choose this route, your project proposal must clearly delineate what work has already been completed and what <em>new, distinct contributions</em> will be generated specifically for this class during the term.</p>
+
+
+     <p><strong>Deliverables & Milestones:</strong></p>
+            <ul style="list-style-type:none; padding-left: 0; margin-bottom: 20px;">
+              <li style="margin-bottom: 15px;">
+                <strong>1. Project Proposal (10%)</strong><br>
+                <em>Format: 1-2 pages. Submit via BruinLearn by 11:59 PM on the deadline.</em><br>
+                Your proposal should clearly articulate the problem or topic you are addressing and why it is relevant to the course. It must include a brief literature review, your proposed methodology, and a realistic weekly timeline. <strong>Crucially, tailor your methodology details to your chosen track:</strong> please specify your target environments/hardware (Empirical track), the mathematical frameworks you will analyze (Theoretical track), or your planned taxonomy and literature scope (Survey track).
+              </li>
+              <li style="margin-bottom: 15px;">
+                <strong>2. In-Class Presentation (20%)</strong><br>
+                <em>Format: 12-minute presentation + 3-minute Q&A.</em><br>
+                During the final week of the quarter, your team will present your findings to the class. The presentation should clearly communicate your motivation, technical approach, and results. A crucial component of this presentation is a critical reflection on your chosen action representation—what worked, what failed, and why.
+              </li>
+              <li style="margin-bottom: 15px;">
+                <strong>3. Final Report (30%)</strong><br>
+                <em>Format: 5–8 pages (excluding references), standard double-column conference format (e.g., IEEE, CoRL, or CVPR style). Submit via BruinLearn by 11:59 PM on the deadline.</em><br>
+                <p style="margin-top: 10px; margin-bottom: 10px;">Your final report should be structured and written at the quality level of a formal academic conference submission. Regardless of your chosen track, the paper must critically evaluate the strengths, assumptions, and limitations of the specific action or motion representations central to your project.</p>
+                
+                <p style="margin-bottom: 10px;"><strong>Expected Document Structure:</strong></p>
+                <ul style="list-style-type: circle; padding-left: 20px; margin-bottom: 15px;">
+                    <li style="margin-bottom: 8px;"><strong>Abstract &amp; Introduction:</strong> Clearly state the problem, your motivation, and your core contributions.</li>
+                    <li style="margin-bottom: 8px;"><strong>Related Work:</strong> Contextualize your project within the existing literature, explicitly drawing connections to the debates and papers discussed during the seminar.</li>
+                    <li style="margin-bottom: 8px;"><strong>Methodology:</strong> Provide a rigorous breakdown of your technical approach, mathematical framework, or the specific taxonomy used to organize your survey.</li>
+                    <li style="margin-bottom: 8px;"><strong>Evaluation &amp; Results:</strong> Tailor this section to your track. 
+                        <em>Empirical projects</em> must include detailed experimental setups, quantitative metrics, and qualitative analyses. 
+                        <em>Theoretical projects</em> should present formal proofs, derivations, and algorithmic analyses. 
+                        <em>Survey projects</em> should provide a deep synthesis of current trends and identify critical open challenges in the field.
+                    </li>
+                    <li style="margin-bottom: 8px;"><strong>Discussion &amp; Conclusion:</strong> Critically reflect on your findings. What worked? What failed? How did your specific choice of representation fundamentally impact the outcome?</li>
+                </ul>
+
+                <p style="margin-bottom: 10px;"><strong>Supplementary Materials:</strong> For empirical and theoretical projects, you are strongly encouraged to include a link to a GitHub repository containing clean, documented code and instructions for reproducibility.</p>
+                
+                <p style="margin-bottom: 0; color: #d9534f;"><strong>Reminder: All deadlines are firm. Under no circumstances will late final reports be accepted.</strong></p>
+              </li>
+            </ul>
+
+            <br>
+            <div class="hrline"><hr /></div>
+
+            <h5>Letter Grades</h5>
+            <p>Final letter grades will be assigned using the following scale, including plus and minus distinctions:</p>
+            <ul style="list-style-type:none; padding-left: 0;">
+              <li><strong>95% – 100%:</strong> A+</li>
+              <li><strong>93% – 94.9%:</strong> A</li>
+              <li><strong>90% – 92.9%:</strong> A-</li>
+              <li><strong>87% – 89.9%:</strong> B+</li>
+              <li><strong>84% – 86.9%:</strong> B</li>
+              <li><strong>81% – 83.9%:</strong> B-</li>
+              <li><strong>78% – 80.9%:</strong> C+</li>
+              <li><strong>75% – 77.9%:</strong> C</li>
+              <li><strong>72% – 74.9%:</strong> C-</li>
+              <li><strong>Below 72%:</strong> F</li>
+            </ul>
+            
           </div>
         </div>
       </div>
-    </font>
+    </div>
 
   </body>
 </html>
